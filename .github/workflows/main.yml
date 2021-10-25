@@ -38,6 +38,15 @@ jobs:
           sudo chown -R www-data:www-data /var/www/html/
           sudo chmod -R 777 /var/www/html/
           
+      - name: Install Apache
+        run: |
+          pwd
+          sudo apt install libapache2-mod-wsgi-py3
+          sudo mkdir /var/www/html/web
+          sudo touch /var/www/html/web/app.wsgi
+          ls /var/www/html/web
+          
+          
           
 
 
