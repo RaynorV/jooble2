@@ -38,7 +38,6 @@ jobs:
           sudo chown -R www-data:www-data /var/www/html/
           sudo chmod -R 777 /var/www/html/
           
-          sudo service apache2 status
           
 
 
