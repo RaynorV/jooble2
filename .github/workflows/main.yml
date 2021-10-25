@@ -1,0 +1,34 @@
+
+name: my-GH-Act
+
+
+on: 
+  push:
+    branches: [ master ]
+
+jobs:
+  check-requirements:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Git clone my repository
+        uses: actions/checkout@v1
+
+######################################################
+      # Runs a single command using the runners shell
+      - name: check that everything is installed
+        run: ls -la
+        
+ 
+      
+     # - name: Updating Web-site Version of Testing server 
+     #   run: |
+          
+
+
+        
+
+
+
+
+
