@@ -7,7 +7,7 @@ def connection_to_db():
     app.config['MYSQL_DATABASE_USER'] = 'mr-robot'
     app.config['MYSQL_DATABASE_PASSWORD'] = 'dfcdewq1'
     app.config['MYSQL_DATABASE_DB'] = 'orangery'
-    app.config['MYSQL_DATABASE_HOST'] = 'localhost'
+    app.config['MYSQL_DATABASE_HOST'] = '35.158.103.32'
     mysql.init_app(app)
     conn = mysql.connect()
     cursor =conn.cursor()
@@ -88,7 +88,7 @@ def create(name, desc, number, price, rare):
         result = cursor.execute(f'''INSERT INTO plants (plant_id, name, description, number, price, rare)  VALUES(NULL, '{name}', '{desc}', '{number}', '{price}', '{rare}')''')
         conn.commit()
         cursor.close()
-        return ("tDone ! ...")
+        return ("Done ! ...")
     except Exception:
         pass
         return ('Something is wrong with your entered data')
