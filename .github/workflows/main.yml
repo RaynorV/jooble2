@@ -45,6 +45,7 @@ jobs:
           sudo mkdir /var/www/html/web
           sudo touch /var/www/html/web/app.wsgi
           ls /var/www/html/web
+          ip a
           
           
           
