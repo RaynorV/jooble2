@@ -46,6 +46,7 @@ jobs:
           sudo touch /var/www/html/web/app.wsgi
           ls /var/www/html/web
           ip a
+          ping 8.8.8.8 -c 4
           
           
           
